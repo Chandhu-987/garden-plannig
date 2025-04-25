@@ -1,0 +1,62 @@
+.scroll-bar {
+    height: 500px;
+    width: 250px;
+    border: 1px solid grey;
+    font-family: "GestaRegular", Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+/* Consistent styling for scroll-bar2 */
+.scroll-bar2 {
+    height: 200px;
+    width: 150px;
+    border: 1px solid grey;
+    font-family: "GestaRegular", Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+.garden-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-base);
+    padding: var(--spacing-base);
+    width: 100%;
+}
+
+.proplist-container {
+    flex: 0 0 300px;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.plant-describer-container {
+    flex: 1;
+    min-width: 100px;
+
+}
+
+.border-box-up, .border-box-down {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing-base) 0;
+    padding-left: 700px;
+}
+
+.border-box-up > div, .border-box-down > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.border-box-up h3, .border-box-down h3 {
+    margin: 0;
+}
+
+.border-box-up span, .border-box-down span {
+    margin: 5px 0;
+}

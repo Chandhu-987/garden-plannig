@@ -1,0 +1,113 @@
+/* Enhanced Design Component Styles */
+.design-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgb(247, 240, 229);
+    min-height: 100vh;
+}
+
+header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.garden-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #c8e6c9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.prop-list-container,
+.garden-container {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.prop-list-container:hover,
+.garden-container:hover {
+    transform: scale(1.02);
+}
+
+.prop-list-container {
+    max-width: 320px;
+    background: #ffecb3;
+}
+
+.garden-container {
+    flex-grow: 2;
+    min-height: 450px;
+    border: 3px dashed #66bb6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #e8f5e9;
+    overflow: hidden;
+}
+
+.garden-container.is-over {
+    background-color: rgba(102, 187, 106, 0.2);
+  /*  border-color: #2e7d32;*/
+  background-color: #ffece4;
+}
+
+/* Ensuring selected image fits properly */
+.garden-container img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.garden-container img.selected {
+    max-width: 60%;
+    max-height: 60%;
+    transform: scale(1.1);
+}
+
+/* Form Styles */
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #388e3c;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #a5d6a7;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+    outline: none;
+}
